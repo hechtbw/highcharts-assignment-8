@@ -1,0 +1,61 @@
+html {
+  box-sizing: border-box;
+}
+* {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2.5% 20%;
+  font-family: serif;
+  background: #FFF;
+  color: #000;
+}
+
+h1, h2{
+  font-family: sans-serif;
+}
+
+#container {
+  width: 80%;
+  /* using px for height would create a huge gap between the graph and the text underneath */
+  height: auto;
+  margin-left: 3rem;
+}
+
+#container2 {
+  width: 80%;
+  height: 600px;
+  margin-left: 3rem;
+}
+
+.text {
+  font-size: 1.18rem;
+}
+
+.undertext {
+  margin-left: 3rem;
+  font-size: 0.8rem;
+}
+@media screen and (max-width: 1200px){
+  body {
+    margin: 4rem;
+  }
+  .text {
+    font-size: 1.05rem;
+  }
+}
+@media screen and (max-width: 900px){
+  body {
+    margin: 4rem;
+  }
+}
+@media screen and (max-width: 450px){
+  #container2, #container {
+    width: 200px;
+    margin: 0;
+  }
+}
